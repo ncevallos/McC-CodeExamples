@@ -1,0 +1,677 @@
+%%[
+
+
+SET@firstName=QUERYPARAMETER('n')
+]%%
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="msvalidate.01" content="214D7A9821BB9FA8BF168913F6A906C1"><link rel="shortcut icon" type="image/png" href="https://di-uploads-pod5.dealerinspire.com/mccluskeychevy/uploads/2017/12/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="https://di-uploads-pod5.dealerinspire.com/mccluskeychevy/uploads/2017/12/favicon.png">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<style>
+body{
+ font-family: 'Titillium Web', Tahoma, Arial, sans-serif;
+}
+.mc-h2 {
+ font-size: 2.5em;
+ text-align: center;
+ margin: auto;
+ padding-top:25px;
+ padding-bottom: 15px;
+}
+.mcherologo {
+ height: 40px;
+}
+
+.bgimg-2 {
+ background-image: url("https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/cbe9ee83-e6c9-4edc-99f1-b77a1caaf475.jpg");
+ min-height: 800px;
+ background-color: #ffffff; 
+ background-repeat: no-repeat !important;
+ background-position: bottom;
+background-size: cover;
+ width: 100%;
+ position: relative;
+  /*z-index: 0;*/
+  }
+.grayback {
+ background-color: #eeeeee;
+ padding: 50px 0px;
+}
+.secondaryheader {
+ font-size: 2em;
+ font-weight: bold;
+}
+.findmyvehicle {
+ background-image: url("https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/1ba72852-7b39-4967-877a-b839896eab21.jpg");
+ min-height: 400px;
+ background-color: #ffffff; 
+ background-repeat: no-repeat !important;
+  /*z-index: 0;*/
+  }
+  .chevydealerback {
+ background-image: url("https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/70f9681c-6382-496a-a9d9-93a6fab0d1e3.jpg");
+ min-height: 725px;
+ background-color: #ffffff; 
+ background-repeat: no-repeat !important;
+ padding: 50px 0px;
+  /*z-index: 0;*/
+  }
+
+@media only screen and (max-width: 578px) {
+
+  .chevydealerback {
+
+  background-image: url(none);
+  min-height: 725px;
+  background-color: #333333; 
+  }
+}
+  .cust-nav{
+   background-color: rgba(255, 255, 255, 0.1);
+   position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+  
+
+  .grayback{
+   background-color: #eeeeee;
+  }
+
+  .drkgray{
+   background-color: #333333;
+  }
+  .mc-button{
+/*   padding:10px 20px;*/
+   font-size: 16px; 
+   font-family: Arial, helvetica, sans-serif; 
+   color: #ffffff; text-align: center; 
+   text-decoration: none; 
+   display: block; 
+   font-weight: bold; 
+   background-color: #0076c0; 
+   border: 1px solid #0076c0;
+   padding: 10px 40px; 
+   border-radius: 3px; 
+/*   max-width: 300px;*/
+   display: inline-block;
+  }
+  .navbutton {
+   font-size: 14px; 
+   font-weight: bold; 
+   font-family: Arial, helvetica, sans-serif; 
+   background-color: #EFB201; 
+   border: 1px solid #EFB201;
+   padding: 10px 20px; 
+   border-radius: 3px; 
+   margin-right: 50px;
+   margin-left: 50px;
+  }
+  .btmbdr{
+   border-bottom: 2px solid #eeeeee;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+  }
+  .center{
+   text-align: center;
+   margin: auto;
+  }
+  .social {
+   margin: 15px;
+  }
+  .header{
+   margin-top: 135px;
+   width:60%;
+   background-color: rgba(255, 255, 255);
+   color: #000000;
+   padding: 20px;
+   border-radius: 15px;
+  }
+  .shadow {
+  box-shadow: 20px 20px 5px #000000;
+  }
+  .navbar-brand {
+   padding:30px 50px;
+  }
+  .cust-link {
+   color: #ffffff !important;
+   text-shadow: 2px 2px #000000;
+   padding-left: 1.75rem !important;
+   padding-right: 1.75rem !important;
+  }
+  .linkspacing {
+   padding-left: 1.5rem !important;
+   padding-right: 1.5rem !important;
+  }
+  .testimonal-block{
+   padding: 25px;
+  }
+  .tblock-desc {
+   text-align: left;
+  }
+  .appstore {
+   margin-left: 1.5rem;
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+   margin-right: 1.5rem;
+  }
+  .accord-head {
+   background-color: #ffffff;
+   padding:25px 25px 15px;
+   margin-bottom: 0px !important;
+   font-size: 1.25rem;
+   color: #000000;
+   text-decoration: none;
+  }
+  .accord-head:hover {
+   text-decoration: none;
+   color: #000000;
+  }
+  .accord-content {
+   background-color: #ffffff;
+   margin-bottom: 15px;
+   padding: 5px 25px 15px;
+  }
+  .card-body {
+   border-radius: 15px;
+  }
+  .card-text{
+   padding-left: 60px;
+  }
+  .text-lg {
+   font-size: 1.5em;
+  }
+  .text-md {
+   font-size: 1.35em;
+  }
+  .no-left {
+   padding-left: 0px;
+  }
+  .footer-row {
+   margin: 1.5em 0em;
+  }
+  .cont40 {
+   padding: 40px 15px;
+  }
+  .cont40-top {
+   padding-top: 40px;
+  }
+  .accordion .card {
+   border-radius: 15px !important;   
+  }
+  .card {
+   background-color: none;
+   margin: 20px 0px;
+   border-radius: 15px;
+  }
+  .card-header {
+   padding: 0rem;
+   border-bottom: none;
+  }
+  .accord-head::before {
+  content: url(https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/f70e3a61-b160-4a0b-a610-45a0897b9c72.png);
+  padding-right: 25px;
+  }
+  .collapsed::before {
+  content: url(https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/40ae01bb-37f0-41d8-8ecf-9f7df94a1620.png);
+  padding-right: 25px;
+  }
+  .navbar-dark .collapsed::before{
+   content: none;
+  }
+@media only screen and (min-width: 1300px) {
+.mcherologo {
+ height: 70px;
+}
+}
+@media only screen and (min-width: 1100px) {
+.mcherologo {
+ height: 60px;
+}
+}
+
+@media only screen and (max-width: 980px) {
+.mcherologo {
+ height: 70px;
+}
+}
+@media only screen and (max-width: 1280px) {
+  .navbutton {
+   margin-right: 0px;
+   margin-left: 0px;
+  }
+  .cust-link {
+   padding-left: 0rem !important;
+   text-align: center;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+.navbar-nav {
+ text-align: end;
+}
+.navbar-text {
+ text-align: end;
+ display: block;
+ padding-top: 10px;
+}
+.no-left {
+ padding-left: 25px;
+}
+.icon-small {
+ width: 100px;
+}
+.mcherologo {
+ height: 70px;
+}
+}
+@media only screen and (max-width: 980px) {
+.navbar-brand {
+ padding: 10px;
+}
+.mcherologo {
+ height: 45px;
+}
+}
+
+/*Form styling below*/
+         #smartcapture-block-j3ef1aa7zl {
+          background-color:transparent;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:left;
+         }
+
+         #smartcapture-block-j3ef1aa7zl .smartcapture-controls {
+          padding-bottom: 10px;
+          text-align: center;
+         }
+
+         #smartcapture-block-j3ef1aa7zl .smartcapture-controls .sc-formfield-label,
+         #smartcapture-block-j3ef1aa7zl .smartcapture-controls .sc-formfield-label label,
+         #smartcapture-block-j3ef1aa7zl .smartcapture-controls .sc-formfield-input label {
+          color:#000000;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:inherit;margin-bottom:3px;vertical-align:middle;
+         }
+
+         #smartcapture-block-j3ef1aa7zl input[type="radio"],
+         #smartcapture-block-j3ef1aa7zl input[type="checkbox"] {
+          margin: 0 0.4em 3px 0;
+          vertical-align: middle;
+         }
+
+         #smartcapture-block-j3ef1aa7zl input[type="text"],
+         #smartcapture-block-j3ef1aa7zl input[type="email"],
+         #smartcapture-block-j3ef1aa7zl input[type="number"] {
+          width:200px;
+         }
+
+         #smartcapture-block-j3ef1aa7zl .sc-button {
+          background-color:#009DDC;border-color:#009DDC;border-radius:3px;border-style:solid;-webkit-border-radius:3px;-moz-border-radius:3px;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:normal;padding:10px;
+         }
+
+         #smartcapture-block-j3ef1aa7zl .smartcapture-submit-button-wrapper {
+          padding-bottom:10px;text-align:center;
+         }
+
+         #smartcapture-block-j3ef1aa7zl .date-dropdown-select-boxes input {
+          display: none;
+         }
+
+         #smartcapture-block-j3ef1aa7zl .date-dropdown-select-boxes .select {
+          max-height: 28em;
+          max-width: 6em;
+          overflow: auto;
+         }
+         .smartcapture-controls {
+          text-align: center;
+         }
+</style>
+</head>
+<body>
+ <!--fixed-top is class if wanted-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent cust-nav">
+  <a class="navbar-brand" href="https://www.mccluskeychevrolet.com/?utm_source=web&utm_medium=SFMC_NavBar&utm_campaign=McCluskey_May2021Promo"><img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/4e1ab2ad-c28d-408d-82fd-2f0c5ef869cd.png" alt="McCluskey Chevrolet" title="McCluskey Chevrolet"  class="mcherologo" height="70px"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="cust-link" href="https://www.mccluskeychevrolet.com/new-vehicles/?utm_source=web&utm_medium=SFMC_NavBar&utm_campaign=McCluskey_May2021Promo">SHOP NEW</a>
+      </li>
+      <li class="nav-item">
+        <a class="cust-link" href="https://www.mccluskeychevrolet.com/used-vehicles/?utm_source=web&utm_medium=SFMC_NavBar&utm_campaign=McCluskey_May2021Promo">SHOP USED</a>
+      </li>
+      <li class="nav-item">
+        <a class="cust-link" href="https://www.mccluskeychevrolet.com/about-lifetime-powertrain-protection-coverage/?utm_source=web&utm_medium=SFMC_NavBar&utm_campaign=McCluskey_May2021Promo">FREE LIFETIME WARRANTY</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <a href="tel:5137411111/?utm_source=web&utm_medium=SFMC_NavBarCallUs&utm_campaign=McCluskey_May2021Promo"  class="navbutton shadow" style="text-decoration:none; color:#000000;">CALL US | 513-741-1111</a>
+    </span>
+  </div>
+</nav>
+<!-- Container element -->
+<div class="bgimg-2 s-content" style="margin-bottom: 50px;">
+<!--first content section-->
+
+<!--jumbotron-fluid test is class-->
+<div class="container">
+  <div class="row">
+  <div class="header center cont40-top">
+      <h1 class="homeheader" style="font-size: 2rem;">
+        <!-- %%[if not empty(QueryParameter('n')) then]%% %%=QueryParameter('n')=%%, %%[endif]%% -->
+      Briarwood Sporting Club members get $500 off on any one of our new or used vehicles.</h1>
+      <p style="color:#000000;" > At McCluskey Chevrolet, our vehicle specialists are available both in our showroom and via virtual appointments to help find the right vehicle for Briarwood Sporting Club members, friends, and family. <b>Tell us what your looking for to get started.</b></p><br/>
+      <!--insert SFMC form code below-->
+        <table cellpadding="0" cellspacing="0" width="100%" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td class="stylingblock-content-wrapper camarker-inner">
+        <form id="smartcapture-block-j3ef1aa7zl" class="smartcapture-content-wrapper fuelux" novalidate="novalidate" action="%%=CloudpagesURL(1036)=%%">
+         <div data-type="slot" data-key="lf3fyz0xio">
+          <div class="smartcapture-controls"><div class="sc-formfield-label"><label for="FirstName">FirstName *</label></div>
+        <div class="sc-formfield-input"><input type="text" name="FirstName" data-field-type="Text" required="required" data-validation-message="Please fill out this field."></div>
+        </div>
+        <!--end firstname-->
+         <div class="smartcapture-controls"><div class="sc-formfield-label"><label for="LastName">LastName *</label></div>
+        <div class="sc-formfield-input"><input type="text" name="LastName" data-field-type="Text" required="required" data-validation-message="Please fill out this field."></div>
+        </div>
+        <!--end LastName-->
+        <div class="smartcapture-controls"><div class="sc-formfield-label"><label for="Email">Email *</label></div>
+        <div class="sc-formfield-input"><input type="email" name="EmailAddress" data-field-type="EmailAddress" data-validation="email" required="required" data-validation-message="Please enter an email address."></div>
+        </div>
+        <!--end email-->
+        <div class="smartcapture-controls"><div class="sc-formfield-label"><label for="Phone">Phone Number *</label></div>
+        <div class="sc-formfield-input"><input type="text" name="Phone" data-field-type="Text" required="required" data-validation-message="Please enter a phone number."></div>
+        </div>
+        <!--end email-->
+        <div class="smartcapture-controls"><div class="sc-formfield-label"><label for="Comments">Tell us what type of vehicle you're looking for today. *</label></div>
+        <div class="sc-formfield-input">
+<!--          <textarea type="textarea" name="Comments" data-field-type="Text" required="required" data-validation-message="Please fill out this field."> 
+            
+          </textarea> -->
+           <input type="text" name="Comments" data-field-type="Text" required="required" data-validation-message="Please fill out this field." maxlength="1000"> 
+        </div>
+        </div>
+        <!--end comments-->
+        <!--hidden fields-->
+
+        <input name="Brand" type="hidden" value="McCluskey Chevrolet">
+        <input name="FormName" type="hidden" value="Briarwood">
+         </div>
+         <div class="smartcapture-submit-button-wrapper">
+          <button type="submit" class="sc-button">Submit</button>
+         </div>
+     </form>
+        </td></tr></table>
+        <div>
+          <div class="layout layout-canvas-g">
+           <div class="section">
+            <div class="columns col1">
+             <div data-type="slot" data-key="col1"></div>
+            </div>
+           </div>
+          </div>
+      </div>
+  </div>
+</div></div>
+
+</div>
+<div class="container">
+
+<!--Why buy section -->
+ <div class="row btmbdr">
+  <h2 class="mc-h2">Why buy at McCluskey Chevrolet?</h2><br/>
+ </div>
+ <div class="row">
+  <div class="col-sm-4">
+   <p>FREE LIFETIME<br/> MECHANICAL WARRANTY</p>
+   <p>On vehicles 19 years old and younger, receive our free unlimited miles lifetime mechanical warranty at our Kings Auto Mall location or at any ASE certified location nationwide.</p>
+   <p><a href="#" style="color:#ffffff;">&gt;&gt; Learn more</a></p>
+  </div>
+  <div class="col-sm-4">
+   <p>FREE 48-HOUR TEST DRIVE<br/> WITH FREE AT-HOME DELIVERY</p>
+   <p>It doesn't get any easier than this. Tell us your home address, auto insurance information and vehicle of interest, then wait for your vehicle to arrive and enjoy your free 48-hour test drive!</p>
+   <p><a href="#" style="color:#ffffff;">&gt;&gt; Learn more</a></p>
+  </div>
+  <div class="col-sm-4">
+   <p>GUARANTEED APPROVAL, WHETHER<br/> CHALLENGED OR NO CREDIT HISTORY</p>
+   <p>We’ll never turn you away. Instead, we’ll put you in an affordable vehicle, help build your credit, and then upgrade your "credit transition" vehicle into your ultimate dream vehicle.</p>
+   <p><a href="#" style="color:#ffffff;">&gt;&gt; Shop By Payment</a></p>
+  </div>
+ </div>
+
+<!--Shop New Chevrolet -->
+ <div class="row btmbdr">
+  <h2 class="mc-h2">Shop New Chevrolet</h2><br/>
+ </div>
+ <div class="row">
+  <div class="col-sm-3 no-left">
+   <a href="https://www.mccluskeychevrolet.com/new-vehicles/?_p=1&_dFR%5Bmodel%5D%5B0%5D=Camaro&_dFR%5Bmodel%5D%5B1%5D=Malibu&_dFR%5Bmodel%5D%5B2%5D=Sonic&_dFR%5Bmodel%5D%5B3%5D=Impala&_dFR%5Btype%5D%5B0%5D=New&_paymentType=our_price&utm_source=web&utm_medium=SFMC_Block3&utm_campaign=McCluskey_May2021Promo" title="Convertibles, Coupes & Cars"><img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/085123d2-4b12-4fac-aac5-1d7773bd88b4.png" alt="Convertibles, Coupes & Cars" title="Convertibles, Coupes & Cars"  width="100%"></a>
+  </div>
+  <div class="col-sm-3 no-left">
+   <a href="https://www.mccluskeychevrolet.com/new-vehicles/?_dFR%5Bmodel%5D%5B0%5D=Bolt%2520EV&_dFR%5Btype%5D%5B0%5D=New&_paymentType=our_price&utm_source=web&utm_medium=SFMC_Block3&utm_campaign=McCluskey_May2021Promo" title="Electric Vehicles"><img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/0d4efcab-0379-4154-8a65-cd548d41c1f8.png" alt="Electric Vehicles" title="Electric Vehicles"  width="100%"></a>
+  </div>
+  <div class="col-sm-3 no-left">
+   <a href="https://www.mccluskeychevrolet.com/new-vehicles/?_dFR%5Bmodel%5D%5B0%5D=Blazer&_dFR%5Bmodel%5D%5B1%5D=Equinox&_dFR%5Bmodel%5D%5B2%5D=Tahoe&_dFR%5Bmodel%5D%5B3%5D=Traverse&_dFR%5Bmodel%5D%5B4%5D=Suburban&_dFR%5Bmodel%5D%5B5%5D=Trax&_dFR%5Bmodel%5D%5B6%5D=TrailBlazer&_dFR%5Btype%5D%5B0%5D=New&_paymentType=our_price&utm_source=web&utm_medium=SFMC_Block3&utm_campaign=McCluskey_May2021Promo" title="SUVs and Crossovers"><img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/9aaaaac8-e407-4bb0-a82c-4af1b05e09e4.png" alt="SUVs and Crossovers" title="SUVs and Crossovers"  width="100%"></a>
+  </div>
+  <div class="col-sm-3 no-left">
+   <a href="https://www.mccluskeychevrolet.com/new-vehicles/?_dFR%5Bmodel%5D%5B0%5D=Silverado%25202500%2520HD&_dFR%5Bmodel%5D%5B1%5D=Silverado%25204500HD&_dFR%5Bmodel%5D%5B2%5D=Silverado%25206500%2520HD&_dFR%5Bmodel%5D%5B3%5D=Silverado%25203500HD&_dFR%5Bmodel%5D%5B4%5D=Silverado%25201500&_dFR%5Bmodel%5D%5B5%5D=Colorado&_dFR%5Btype%5D%5B0%5D=New&_paymentType=our_price&utm_source=web&utm_medium=SFMC_Block3&utm_campaign=McCluskey_May2021Promo" title="Trucks"><img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/38ffd064-78e0-47df-95b7-5c2725c7ab84.png" alt="Trucks" title="Trucks"  width="100%"></a>
+  </div>
+ </div>
+<!--Shop Certified Used-->
+ <div class="row btmbdr ">
+  <h2 class="mc-h2">Shop Certified Used</h2><br/>
+ </div>
+ <div class="row findmyvehicle" >
+  <div class="col-12 center">]
+   <a class="btn btn-primary mc-button " href="https://www.mccluskeychevrolet.com/used-vehicles/certified-pre-owned-vehicles/?utm_source=web&utm_medium=SFMC_Block3&utm_campaign=McCluskey_May2021Promo" role="button" title="Find my Vehicle">FIND MY VEHICLE</a>]
+  </div>
+ </div>
+</div>
+<!--M Bucks App-->
+<div class="grayback">
+<div class="container cont40">
+ <div class="row">
+  <h2 class="mc-h2">Over $600,000 M-Bucks have been rewarded to our customers</h2><br/><br/>
+ </div>
+ <div class="row">
+  <div class="col-md-5">
+   <img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/466672a6-d3bc-4ef6-91eb-1251210fee0b.png" alt="M-Bucks App" title="M-Bucks App" width="100%" >
+  </div>
+  <div class="col-md-7">
+   <p class="secondaryheader">Download our M-Bucks App and earn free vehicle maintenance for life!</p>
+   <div class="row">
+    <div class="col-sm-2 center">
+     <p><img class="icon-small" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/da6ce301-dfdd-4ba1-a606-e9a3fc524547.png" title="Vehicle Service" width="50px" ></p>
+    </div>
+    <div class="col-sm-10 no-left">
+     <p class="text-md">Rack up M-Bucks by referring your friends to buy a vehicle through us and never pay out of pocket for your vehicle service again.</p>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-sm-2 center">
+     <p><img class="icon-small" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/201a6617-249a-41b0-8782-58cbca856704.png" title="Vehicle Service" width="50px" ></p>
+    </div>
+    <div class="col-sm-10 no-left">
+     <p class="text-md">Choose from 144 ASE certified service locations, including our Kings Auto Mall location in Cincinnati and any Tire Discounters store nationwide.</p>
+    </div>
+   </div>    <div class="row">
+    <div class="col-sm-2 center">
+     <p><img class="icon-small" class="center" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/5cdac667-42b0-427c-bbce-3f82151154cc.png" alt="Vehicle Sales" title="Vehicle Sales" width="50px" ></p>
+    </div>
+    <div class="col-sm-10 no-left">
+     <p class="text-md">Use M-Bucks you've accrued as a downpayment on your next vehicle at McCluskey Chevrolet.</p>
+    </div>
+   </div>
+   <a href="https://apps.apple.com/us/app/m-bucks/id999840268?uo=4&utm_source=web&utm_medium=SFMC_Block4&utm_campaign=McCluskey_May2021Promo" title="Apple Store" ><img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/136e2eb3-8b78-4ec3-8f01-108ab96e8116.png" alt="Available on the App Store" title="Available on the App Store" width="150px" class="appstore"></a>
+   <a href="https://play.google.com/store/apps/details?id=com.mccluskeybucks.mccluskey&hl=en_US&utm_source=web&utm_medium=SFMC_Block4&utm_campaign=McCluskey_May2021Promo" title="Google Play Store"><img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/87ab3d75-ca56-4e80-a9de-a7f974f0085d.png" alt="Get it on Google Play" title="Get it on Google Play" width="150px" class="appstore"></a>
+  </div>
+
+ <!--end of container-->
+ </div></div></div>
+ <!--Testimonials Section-->
+ <div class="chevydealerback">
+ <div class="container center cont40" style="color:#ffffff;">
+  <div class="row">
+   <p class="center" style="display: block; width:100%;">TESTIMONIALS</p><br/>
+   <h2 class="mc-h2">What people say about McCluskey</h2>
+  </div>
+  <div class="row">
+   <div class="col-sm-4 testimonal-block">
+    <p>KYRA BURSON<br/>RepMan Survey</p><br/>
+    <div class="tblock-desc">
+     <p>"Pat was great! He was super helpful and answered all my questions. He was direct and honest! And he was never pushy! I have had a lot of negative car shopping/buying experiences, but this was a great experience! I absolutely love my new Equinox!"</p>
+    </div>
+   </div>
+   <div class="col-sm-4 testimonal-block">
+    <p>NICOLA TRIANTAFILLOU<br/>Google</p><br/>
+    <div class="tblock-desc">
+     <p>"This was by far the easiest and most convenient way to purchase a vehicle. They actually listened to my concerns and helped me find my awesome car. Marianne was an absolute joy and pleasure to deal with and kept me updated every step of the way. A truly fantastic experience. Highly recommend!!!"</p>
+    </div>
+   </div>
+   <div class="col-sm-4 testimonal-block">
+    <p>CHUCKWICK BRUMER<br/>FACEBOOK</p><br/>
+    <div class="tblock-desc">
+     <p>"I recommend you ask for Antoine Wilson. Your car buying experience will be that much smoother than your last one. McCluskey Chevrolet is by far the best car dealership that I've ever experienced. That Red Carpet is no joke!"</p>
+    </div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-sm-4 testimonal-block">
+    <p>HARRISON TOBIN<br/>Google</p><br/>
+    <div class="tblock-desc">
+     <p>"Jake M in service absolutely kills the game in all facets of the industry. I will never get service or a car anywhere else but McCluskey for the rest of my days due to this man's care, love for the game and customer service. His attitude is A+ and this place gets 5 stars from me due to him and the rest of the staff and ownership."</p>
+    </div>
+   </div>
+   <div class="col-sm-4 testimonal-block">
+    <p>MEKAYLA BOLIN<br/>Facebook</p><br/>
+    <div class="tblock-desc">
+     <p>"If you're looking for an amazing salesman ask for Dontae! He is definitely one of the best salesmen I've ever dealt with. Did everything possible to get my husband and I and my father in law into the vehicle we wanted within our price range. We went to a few dealerships but McCluskey definitely gave us the best deal. We won't be buying cars from anywhere else."</p>
+    </div>
+   </div>
+   <div class="col-sm-4 testimonal-block">
+    <p>KARISA PARSON<br/>Google</p><br/>
+    <div class="tblock-desc">
+     <p>"I had just filed for bankruptcy and Glen helped me get into a newer car and get out of my current car loan that I owed more on that it was worth. It was so easy and fast. I was not expecting to rebuild my credit and get out from under the money pit I was driving to be so pleasant. But Glen was absolutely wonderful to work with. He is so kind and knowledgeable! I am beyond happy with this company and Glen, my representative."</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!--FAQ Section-->
+<div class="grayback">
+  <div class="container cont40">
+   <div class="row">
+    <h2 class="mc-h2">
+     You have questions. We have answers.</h2></div>
+     <div class="accordion" id="accordionExample">
+    <div class="card">
+     <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+       <button aria-controls="collapseOne" aria-expanded="true" class="btn btn-link btn-block text-left accord-head" data-target="#collapseOne" data-toggle="collapse" type="button">Will I get the free lifetime mechanical warranty when I buy the 2005 Ford Focus for $6,800 listed on your site?</button></h2></div><div aria-labelledby="headingOne" class="collapse show" data-parent="#accordionExample" id="collapseOne">
+      <div class="card-body">
+       <p class="card-text">
+        Absolutely! Whether you purchase one of our new Chevrolet vehicles or one of our used vehicles, models 19 years and newer, you can rest assured that your vehicle will come standard with the peace-of-mind that accompanies our free lifetime mechanical warranty! Our mechanical warranty has no mileage limit and no year limit, making it a convenient benefit that gives you peace of mind while you own the vehicle.<br>
+        <br>
+        Simply make sure to get your oil changed every 6,000 miles and keep copies of all your repair orders to maintain major mechanical coverage for a lifetime on that vehicle. You can use your lifetime mechanical warranty at any ASE certified repair shop nationwide.</p></div></div></div><div class="card">
+     <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+       <button aria-controls="collapseTwo" aria-expanded="false" class="btn btn-link btn-block text-left collapsed accord-head" data-target="#collapseTwo" data-toggle="collapse" type="button">Bankruptcy, 410 Credit Score, only $500 for a downpayment - Can you really guarantee my credit approval?</button></h2></div><div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionExample" id="collapseTwo">
+      <div class="card-body">
+       <p class="card-text">
+        We work with a wide range of lenders &ndash; GM Financial, Capital One, Ally, Huntington and Credit Acceptance, just to name a few. Each lender&rsquo;s guidelines and requirements are slightly different allowing us to customize the best lender for your credit approval needs.<br>
+        <br>
+        For decades, we have specialized in getting customers with challenged credit approved and into a safe, reliable vehicle. As you continue making timely bi-weekly or monthly payments, your credit score will grow. Once your credit situation has improved, we can help you either refinance your loan with a lower interest rate and lower monthly payment or trade in your &quot;credit transition&quot; vehicle in for a better vehicle with a similar monthly payment.<br>
+        <br>
+        At McCluskey Chevrolet, we proudly change lives... one car loan at a time with our Guaranteed Credit Approval.</p></div></div></div><div class="card">
+     <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+       <button aria-controls="collapseThree" aria-expanded="false" class="btn btn-link btn-block text-left collapsed accord-head" data-target="#collapseThree" data-toggle="collapse" type="button">What if I need repair or maintenance done on my vehicle?</button></h2></div><div aria-labelledby="headingThree" class="collapse" data-parent="#accordionExample" id="collapseThree">
+      <div class="card-body">
+       <p class="card-text">
+        McCluskey Chevrolet in Cincinnati, Ohio has one of the best and most respected Service Departments in the area. If it is convenient for you to come to our Dealership, you will get great service at great prices. For your convenience, our Service Department is open until 3:00 a.m. Monday &ndash; Thursday, until 6:00 p.m. Friday 4 p.m. Saturday and Sunday.<br>
+        <br>
+        We realize that breakdowns happen, even when you're out of town. That is why we partnered with Tire Discounters to handle most, if not all, of your service needs. Tire Discounters is the only Service Provider, other than McCluskey Chevrolet ourselves, that accepts M-Bucks as payment for your vehicle service cost.</p></div></div></div></div>
+      </div></div>
+<!--Call Center Section-->
+ <div class="container cont40-top">
+  <div class="row">
+    <h2 class="mc-h2">Ready to get started?</h2>
+  </div>
+  <div class="row">
+   <div class="col-sm-12 col-md-6">
+    <img src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/4771864f-4890-4435-80dc-36ccd81d9b9d.png" alt="Vehicle Sales" title="Vehicle Sales" width="100%" >
+   </div>
+   <div class="col-sm-12 col-md-6">
+    <p class="secondaryheader">Give us 10 minutes of your time and we'll do all the heavy lifting for you.</p><br/>
+
+    <div class="row">
+     <div class="col-sm-2 center">
+      <img class="icon-small" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/3726378c-104c-4797-8805-62384c82c803.png" alt="Fit Your Budget" title="Fit Your Budget" width="50px" >
+     </div>
+     <div class="col-sm-10 no-left">
+      <p class="text-lg">Fit your budget and finance options, no matter your credit history.</p>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-2 center">
+      <p><img class="icon-small" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/ff065a37-596e-450e-8beb-768a9583aec5.png" alt="Search Nationwide" title="Search Nationwide" width="50px" ></p>
+     </div>
+     <div class="col-sm-10 no-left">
+      <p class="text-lg">Locate your new Chevrolet on any Chevrolet dealership lot nationwide.</p>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-2 center">
+      <p><img class="icon-small" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/6baba233-d1f9-4d93-90b3-f97c80f8d4d9.png" alt="172 Point Inspection" title="172 Point Inspection" width="50px" ></p>
+     </div>
+     <div class="col-sm-10 no-left">
+      <p class="text-lg">Certify it through our 172 point mechanical inspection plus get a clean vehicle history report.</p><br>
+     </div>
+    </div>
+     <div class="row">
+      <div class="col-sm-12 left">
+            <a class="btn btn-primary mc-button shadow center" href="https://www.mccluskeychevrolet.com/schedule/?utm_source=web&utm_medium=SFMC_Block7&utm_campaign=McCluskey_May2021Promo" style="background-color: #EFB201; border-color: #EFB201; color:#000000; margin-bottom: 40px;"role="button">ONLINE PRESENTATION</a>
+         </div>
+     </div>
+   </div>
+  </div>
+ </div>
+ <!--Social links bar-->
+ <div class="drkgray">
+  <div class="container cont40">
+   <div class="row">
+    <h2  class="mc-h2" style="color:#ffffff;">JOIN  McCLUSKEY ONLINE</h2><br/>
+   </div>
+   <div class="row">
+    <div class="col-sm-12 center">
+     <a alias="Instagram_Footer" href="https://www.instagram.com/mccluskeychevroletcincinnati/?utm_source=web&utm_medium=SFMC_SocialBlock&utm_campaign=McCluskey_May2021Promo" style="border: 0; text-decoration: none; color: #ffffff;" target="_blank"><img class="social" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/c9fa1993-9603-49b8-ad20-f9965efef0b3.png" alt="Instagram" title="Instagram" width="50px" ></a>
+         <a alias="Facebook_Footer" href="https://www.facebook.com/McCluskeyChevrolet?utm_source=web&utm_medium=SFMC_SocialBlock&utm_campaign=McCluskey_May2021Promo" style="border: 0; text-decoration: none; color: #ffffff;" target="_blank"><img class="social" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/da4eb172-bcf1-4287-9e81-bd3ca47e6633.png" alt="Facebook" title="Facebook" width="50px" ></a>
+     <a alias="YouTube_Footer" href="https://www.youtube.com/channel/UCg_LLr4aK0cASQbcXB8VB-w/videos?utm_source=web&utm_medium=SFMC_SocialBlock&utm_campaign=McCluskey_May2021Promo" style="border: 0; text-decoration: none; color: #ffffff;" target="_blank"><img class="social" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/2597c3af-4b0c-4416-a549-ddedac2b9c67.png" alt="Youtube" title="Youtube" width="50px" ></a>
+     <a alias="LinkedIn_Footer" href="https://www.linkedin.com/company/mccluskey-chevrolet?utm_source=web&utm_medium=SFMC_SocialBlock&utm_campaign=McCluskey_May2021Promo" style="border: 0; text-decoration: none; color: #ffffff;" target="_blank"><img class="social" src="https://image.teammccluskey.com/lib/fe3d157075640575751074/m/1/7df1a4f3-0545-4b03-9080-a4587fc29e7d.png" alt="LinkedIn" title="LinkedIn" width="50px" ></a>
+    </div>
+
+   </div>
+  </div>
+ </div>
+
+<!--Footer Section-->
+ <div class="container">
+  <div class="row center footer-row">
+   <p class="center"><span class="linkspacing">Copyright @ 2021 - McCluskey Chevrolet</span><span>   |  </span><span class="linkspacing">9673 Kings Auto Mall Road Cincinnati, OH 45249  </span><span>|</span><span class="linkspacing">   <a href="tel:5137411111" style="text-decoration:none; color:#000000;">513-741-1111</a></span></p>
+  </div>
+  <div class="row center footer-row">
+   <p class="center"><a class="linkspacing" title="Privacy Policy" href="https://www.mccluskeychevrolet.com/privacy-policy/" style="color:#000000;"> Privacy Policy  </a><span>|</span><a class="linkspacing" title="Contact Us" href="https://gubagoo.io/live-chat/126052?toolbar_id=1&utm_source=web&utm_medium=SFMC_Footer&utm_campaign=McCluskey_May2021Promo" style="color:#000000;">  Contact Us</a></p>
+  </div>
+    </div>
+
+</body>
+<script src="https://cdn.gubagoo.io/toolbars/126052/loader_126052_1.js" async></script>
+</html>
